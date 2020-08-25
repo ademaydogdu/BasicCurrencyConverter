@@ -1,0 +1,191 @@
+
+
+/* gloobal */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+ul {
+    color: #fff;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+.search-area input {
+    outline: none;
+}
+
+
+
+
+
+.banner {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background: url('../img/bg-banner.jpg') no-repeat center center;
+}
+.banner::after {
+    opacity: 0.1;
+    z-index:-1;
+}
+
+    .banner .banner-content h1 {
+        font-size: 60px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 80px;
+        margin-bottom: 15px;
+    }
+
+        .banner .banner-content h1 span {
+            font-weight: 300;
+        }
+
+    .banner .banner-content p {
+        color: #a8a8c9;
+        margin-bottom: 37px;
+    }
+
+    .banner .banner-content .exchange-button {
+        display: inline-block;
+        width: 310px;
+        position: relative;
+        margin-right: 10px;
+        float: left;
+    }
+
+        .banner .banner-content .exchange-button:last-child {
+            margin-right: 0;
+            width: 260px;
+        }
+
+        .banner .banner-content .exchange-button input {
+            border: 1px solid #47476f;
+            background: transparent;
+            height: 60px;
+            width: 100%;
+            border-radius: 50px;
+            padding: 0 30px;
+            color: #fff;
+            outline: none;
+        }
+
+            .banner .banner-content .exchange-button input::placeholder {
+                color: #fff;
+                opacity: .6;
+            }
+
+        .banner .banner-content .exchange-button select {
+            background: #1e98ff;
+            border: 0;
+            height: 60px;
+            padding: 0 30px;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 50px;
+            outline: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+        }
+
+.exchange-now {
+    width: 100%;
+    float: left;
+}
+
+    .exchange-now button {
+        background: #ff1679;
+        border: 0;
+        height: 60px;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 220px;
+        border-radius: 50px;
+        margin-top: 30px;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        transition: .4s;
+        outline: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+        .exchange-now button:hover {
+            background: #fff;
+            color: #ff1679;
+        }
+
+.banner .brands {
+    padding-bottom: 50px;
+    display: none;
+}
+
+    .banner .brands ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+        .banner .brands ul li {
+            display: inline-block;
+            margin-right: 130px;
+        }
+
+            .banner .brands ul li:last-child {
+                margin-right: 0;
+            }
+
+            .banner .brands ul li .single-banner {
+                width: 260px;
+            }
+
+                .banner .brands ul li .single-banner img {
+                    width: 100%;
+                }
+
+
+
+
+
+
+.exchange-button .icon {
+    position: absolute;
+    top: 17px;
+    right: 25px;
+    color: #fff;
+}
+
+.next {
+    margin-bottom: 0;
+}
+
+.log {
+    color: #fff;
+    text-align: center;
+
+}
+
+.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+    background-color: none;
+    border: 1px solid rgba(255, 0, 0, .5);
+}

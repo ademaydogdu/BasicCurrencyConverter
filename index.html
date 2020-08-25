@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta title="Currency Converter"> 
+    <!--[if lt IE 9]>
+         <script src="src/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <!--user scripts-->
+    <script src="src/js/app.js"></script>
+    <script src="src/js/currency_converter.js"></script>
+</head>
+<body class="banner" ng-app="currency_converter" ng-controller="CurrencyController">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <h1>
+                            Exchange
+                            Currency
+                            <br>
+                            <span>At The Best Rate</span>
+                        </h1>
+                        <p>It's that simple.</p>
+                        <div class="col-x1-5">
+                            <div class="exchange-button">
+                                <input type="text" placeholder="1" ng-model="amount">
+                                <select ng-model="currencyIndex">
+                                    <option>TRY</option>
+                                    <option>USD</option>
+                                    <option>EUR</option>
+                                    <option>GBP</option>
+                                    <option>INR</option>
+                                    <option>CAD</option>
+                                </select>
+                                <div class="icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="exchange-button" style="width:115px;">
+                                <select ng-model="currencyIndex2">
+                                     <option>USD</option>
+                                     <option>TRY</option>
+                                     <option>EUR</option>
+                                     <option>GBP</option>
+                                     <option>INR</option>
+                                     <option>CAD</option>
+                                </select>
+                                <div class="icon">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-now">
+                            <button class="exchange-now-button" ng-click="calculate()">Exchange Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="exchange-now list-group ">
+                        <li ng-repeat="log in Logs | orderBy:'-date'" class="{'fadeOut' : skill.done} log rcorners2"> {{log.date}} {{log.amount}} = {{log.result}}</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

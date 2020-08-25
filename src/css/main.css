@@ -1,0 +1,53 @@
+.banner {
+    padding: 217px 0 0;
+    background: url('../img/bg-banner.jpg') no-repeat center center;
+		}
+
+input {
+
+	border: 1px solid #47476f;
+    background: transparent;
+    height: 60px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0 30px;
+    color: #fff;
+    outline: none;
+}		
+
+select {
+
+
+	background: #1e98ff;
+    border: 0;
+    height: 60px;
+    padding: 0 30px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    outline: none;
+    width: 120px;
+   
+}
+.exchange-now button:hover {
+    background: #fff;
+    color: #ff1679;
+}
+.exchange-now button {
+    background: #ff1679;
+    border: 0;
+    height: 60px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 220px;
+    border-radius: 50px;
+    margin-top: 30px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600
+}
